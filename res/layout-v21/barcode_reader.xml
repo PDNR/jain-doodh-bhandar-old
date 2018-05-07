@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar android:background="@color/blue_pelorus" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="5dp">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageButton android:id="@+id/qrScan_backButton" android:background="@mipmap/back_icon" android:padding="@dimen/margin_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="@dimen/textsize_18" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/qrScan" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="vertical" android:background="#40787878" android:padding="@dimen/margin_2" android:layout_width="match_parent" android:layout_height="match_parent"
+            <FrameLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:id="@+id/cameraPreview" android:background="#939393" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:id="@+id/layout_scan_again" android:background="#80000000" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:id="@+id/iv_tap" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/hand_icon" />
+                <TextView android:textAppearance="?unknown_attr_ref: 1010041" android:textColor="@color/white" android:id="@+id/textView10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tap to scan again" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

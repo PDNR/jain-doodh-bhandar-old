@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"
+    <LinearLayout android:orientation="horizontal" android:background="@color/blue_pelorus" android:paddingLeft="@dimen/margin_5" android:paddingTop="@dimen/margin_10" android:paddingRight="@dimen/margin_5" android:paddingBottom="@dimen/margin_10" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView app:id="@+id/drawer_userProfile" app:layout_width="UNKNOWN_DATA_0x5001" app:layout_height="UNKNOWN_DATA_0x5001" app:src="@drawable/user" app:civ_border_color="@color/white" app:civ_border_width="2dp" />
+        <LinearLayout app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="@dimen/margin_10">
+            <TextView app:textSize="@dimen/textsize_18" app:textColor="@color/white" app:id="@+id/drawer_firstName" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="Your Name with xyz" />
+            <TextView app:textSize="@dimen/textsize_18" app:textColor="@color/white" app:id="@+id/drawer_dueBalance" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="@dimen/margin_5" app:text="Rs. 50239.89" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout app:orientation="vertical" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_marginTop="@dimen/margin_10">
+        <ListView app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/drawer_list" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_margin="15dp" app:listSelector="0x106000d" app:cacheColorHint="@color/white" app:divider="0x0" />
+    </LinearLayout>
+</LinearLayout>

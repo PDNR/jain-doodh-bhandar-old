@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="litre__in_grams_arrays">
+        <item>250 gm</item>
+        <item>500 gm</item>
+        <item>750 gm</item>
+    </array>
+    <array name="litre_arrays">
+        <item>1 Litre</item>
+        <item>2 Litre</item>
+        <item>3 Litre</item>
+        <item>4 Litre</item>
+        <item>5 Litre</item>
+        <item>6 Litre</item>
+        <item>7 Litre</item>
+        <item>8 Litre</item>
+        <item>9 Litre</item>
+        <item>10 Litre</item>
+    </array>
+</resources>

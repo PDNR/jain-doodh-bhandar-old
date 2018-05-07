@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.jaindoodhbhandaaran">
+    <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="26" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <application android:theme="@style/AppTheme" android:label="@string/app_name" android:icon="@mipmap/launcher_icon" android:name="com.jaindoodhbhandaaran.app.MyApplication" android:allowBackup="true" android:supportsRtl="true" android:roundIcon="@mipmap/launcher_icon">
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.jaindoodhbhandaaran.activity.SplashActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.jaindoodhbhandaaran.activity.LoginActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/AppCompatToolBarTheme" android:name="com.jaindoodhbhandaaran.activity.QRCodeReaderActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/AppCompatToolBarTheme" android:name="com.jaindoodhbhandaaran.activity.dashboard.HockerDashboardActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/AppCompatToolBarTheme" android:name="com.jaindoodhbhandaaran.activity.dashboard.CustomerDashboardActivity" android:screenOrientation="portrait" />
+        <meta-data android:name="android.support.VERSION" android:value="26.1.0" />
+        <meta-data android:name="android.arch.lifecycle.VERSION" android:value="27.0.0-SNAPSHOT" />
+    </application>
+</manifest>
